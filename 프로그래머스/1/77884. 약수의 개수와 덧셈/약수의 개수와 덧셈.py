@@ -5,9 +5,6 @@ def solution(left, right):
         for j in range(1, i + 1):
             if i % j == 0:
                 div += 1
-        if div % 2 == 0:
-            answer += i
-        else:
-            answer -= i
+        answer += i if div % 2 == 0 else - i
         div = 0
     return answer
