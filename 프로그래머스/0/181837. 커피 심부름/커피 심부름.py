@@ -1,0 +1,2 @@
+def solution(order):
+    return sum([int(i.replace("iceamericano", "4500").replace("americanoice", "4500").replace("hotamericano", "4500").replace("americanohot", "4500").replace("icecafelatte", "5000").replace("cafelatteice", "5000").replace("hotcafelatte", "5000").replace("cafelattehot", "5000").replace("americano", "4500").replace("cafelatte", "5000").replace("anything", "4500")) for i in order])
