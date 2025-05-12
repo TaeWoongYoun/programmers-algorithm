@@ -1,9 +1,9 @@
 def solution(array):
-    max_count, answer = 0, 0
+    max_cnt, answer = 0, 0
     for i in set(array):
-        count = array.count(i)
-        if count > max_count: 
-            max_count, answer = count, i
-        elif count == max_count: 
+        cnt = array.count(i)
+        if cnt > max_cnt: 
+            max_cnt, answer = cnt, i
+        elif cnt == max_cnt: 
             answer = -1
     return answer
